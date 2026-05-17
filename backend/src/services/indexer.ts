@@ -12,7 +12,10 @@ export async function startIndexer() {
   const provider = new ethers.JsonRpcProvider(config.kiteRpcUrl);
   
   // Load addresses
-  const addressPath = path.resolve(process.cwd(), "../frontend/contracts/deployed-addresses.json");
+  let addressPath = path.resolve(process.cwd(), "../frontend/contracts/deployed-addresses.json");
+  if (!fs.existsSync(addressPath)) {
+    addressPath = path.resolve(process.cwd(), "../oracle-backend/deployed-addresses.json");
+  }
   if (!fs.existsSync(addressPath)) {
     console.warn("⚠️ No deployed-addresses.json found. Indexer will wait.");
     return;
