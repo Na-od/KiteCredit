@@ -32,10 +32,10 @@ app.use("/api/pool", poolRouter);
 // Export for Vercel serverless
 export default app;
 
-// Only listen if not running in a serverless environment
-if (process.env.NODE_ENV !== "production") {
+// Always listen on Render and local environments (skip only on Vercel serverless)
+if (process.env.VERCEL !== "1") {
   app.listen(config.port, () => {
-    console.log(`KiteCredit API running on http://localhost:${config.port}`);
+    console.log(`KiteCredit API running on port ${config.port}`);
   });
 }
 
