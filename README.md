@@ -7,6 +7,8 @@ KiteCredit bridges human liquidity providers with autonomous AI trading bots thr
 [![Network](https://img.shields.io/badge/Network-Kite%20AI%20Testnet-blue)](https://testnet.kitescan.ai)
 [![Chain ID](https://img.shields.io/badge/Chain%20ID-2368-blue)](https://rpc-testnet.gokite.ai)
 [![PYUSD](https://img.shields.io/badge/Token-PYUSD-green)](https://testnet.kitescan.ai)
+[![Frontend](https://img.shields.io/badge/DApp-frontend--beryl--iota--43.vercel.app-blue?logo=vercel)](https://frontend-beryl-iota-43.vercel.app)
+[![Backend](https://img.shields.io/badge/API-kitecredit.onrender.com-purple?logo=render)](https://kitecredit.onrender.com)
 
 ---
 
