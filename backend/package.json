@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "start": "node dist/index.js",
-    "build": "tsc",
+    "build": "npm --prefix ../contracts install && npm --prefix ../contracts run compile && npm --prefix ../frontend/contracts install && npm --prefix ../frontend/contracts run compile && tsc",
     "seed": "tsx src/scripts/seed.ts",
     "demo:agent": "tsx src/scripts/autonomous-agent.ts"
   },
